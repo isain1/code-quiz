@@ -1,3 +1,22 @@
+var introEl = document.getElementById("intro");
+var startBtnEl = document.getElementById("start-btn");
+var questionPromptEl = document.getElementById("question-prompt");
+var answer1El = document.getElementById("answer-1");
+var answer2El = document.getElementById("answer-2");
+var answer3El = document.getElementById("answer-3");
+var answer4El = document.getElementById("answer-4");
+var resultsEl = document.getElementById("results");
+var postGameEl = document.getElementById("post-game");
+var timeLeftEl = document.getElementById("time-left");
+var playerInitialsEl = document.getElementById("player-initials");
+var submitInitialsEl = document.getElementById("submit-initials");
+var highjScoresPageEl = document.getElementById("high-scores-page");
+var restartEl = document.getElementById("restart");
+var clearHighScoresEl = document.getElementById("clear-high-scores");
+var answerConfirmation = document.getElementById("answer-confirmation");
+
+
+
 let questions = [{
     question: "Arrays in JavaScript can be used to store which of the following?",
     option1: "Variables",
@@ -28,17 +47,23 @@ let questions = [{
     option2: "Math.random(1,n)",
     option3: "Math.floor(Math.random() * n) + 1",
     option4: "Math.floor(Math.random(n)"},
-]
+]  
 
 
 
-
+startBtnEl.addEventListener("click", initializeGame());
 
 
 
 
 function initializeGame() {
-
+    randomQuizQuestion(); //gives random quiz question
+    //
 }
 
-function ()
+
+function algorithm(input) {
+    const myArray = text.split(input);
+    console.log(myArray);
+}
+algorithm("how do i get started")
